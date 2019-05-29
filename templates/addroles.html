@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<h1>Add Role Page</h1>
+<form method="post">
+    {% csrf_token %}
+    {% if inserted %}
+    <script>
+        alert('Data successfully inserted');
+    </script>
+    {% endif %}
+    {{ form.as_p }}
+    <input type="submit" value="Insert Role"/>
+
+</form>
+</head>
+<body>
+
+</body>
+</html>
